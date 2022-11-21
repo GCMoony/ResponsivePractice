@@ -1,23 +1,37 @@
+:root{
+    --main-dark-text: #000;
+    --main-light-text: #36373e;
+    --main-color: #9498A4;
+    --main-secondary: #f2bb05;
+    --accent-01: #d74e09;
+    --accent-02: #6e0e0a;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    
+    color: var(--main-dark-text);
+    background-color: var(--main-light-text);
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+#collection-title {
+    background-color: var(--main-color);
+    color: var(--main-dark-text);
+    border-radius: 15px;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: red dashed 2px;
-    
     padding: 0;
     min-width: 9vw;
 }
 
 main > *{
-    border: red solid 1px;
     width: 100%;
     margin: auto;
     padding: 1rem;
@@ -38,7 +52,9 @@ main > *{
 }
 
 .collection-card {
-    background-color: brown;
+    background-color: var(--main-color);
+    color: var(--main-dark-text);
+    font-size: 1.2em;
     border-radius: 15px;
     min-width: 200px;
     max-width: 400px;
@@ -50,23 +66,23 @@ main > *{
     display: block;
     width: 100%;
     height: 200px;
-    background-color: burlywood;
-
+    background-color: var(--main-light-text);
+    color: var(--main-dark-text);
 }
 
 .card-desc {
-    color: black;
+    
     overflow: hidden;
+    padding: 1rem;
 }
 
 .card-desc:hover {
-    background-color: white;
-    color: dodgerblue;
+    background-color: var(--main-secondary);
+    color: var(--main-dark-text);
 }
 
 .card-desc > a {
     padding: .5rem;
-    
     display: block;
     color:inherit;
     text-decoration: none;
