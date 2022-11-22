@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+/*
+    TODO
+============
+- Use a media query to adjust the #navbar
+- If the media is small, put the #navbar on top of the page
+- If the media is regular, put the #navbar on the side of the page
+*/
+
+header{
+    font-size: 2rem;
+}
