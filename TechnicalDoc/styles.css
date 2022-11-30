@@ -10,6 +10,61 @@
 - If the media is regular, put the #navbar on the side of the page
 */
 
-header{
-    font-size: 2rem;
+body {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: left;
+}
+
+@media (min-width: 50em) {
+    body{
+        flex-direction: row;
+    }
+
+}
+
+header {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+nav {
+    padding: 1em;
+}
+
+.nav-link-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link-list > li {
+    border: solid 1px black;
+}
+
+.nav-link {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-link:hover {
+    background: #dddddd;
+}
+
+.nav-link-list > li:not(.nav-link-list > li:nth-child(6n)) {
+    border-bottom: none;
+}
+
+code{
+    display: block;
+    background-color: #000;
+    padding: 1em;
+    color: #00ff00;
+    border-radius: 5px;
 }
