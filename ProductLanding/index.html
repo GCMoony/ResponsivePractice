@@ -2,40 +2,87 @@
 <html lang="en">
     <head>
         <title>Product Landing Page</title>
-        <link href="./styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css">
         <meta name="content" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
+        
     </head>
 
     <body>
         <header id="header">
-            <img id="header-img" alt="Heading Logo" src="#">
+            <img id="header-img" alt="Heading Logo" src="https://cdn.pixabay.com/photo/2019/12/09/18/02/brass-4684040_960_720.jpg">
+            <h1>3xD Printing</h1>
             <nav id="nav-bar">
-                <a class="nav-link" href="#services-card">Our Services</a>
+                <a class="nav-link" href="#services-card">What We Do</a>
                 <a class="nav-link" href="#video-card">Why You Want It</a>
                 <a class="nav-link" href="#pricing-card">Service Pricing</a>
             </nav>
         </header>
 
         <section id="services-card">
-            <h1>Our Services</h1>
+            <h2>What We Do</h2>
+            <p>We setup your 3D printer, so you can focus on the things you want to make. Not everyone has the time to double-down to fine tune and calibrate their printer.</p>
+            <p>Give us the opportunity to help you make the things you want to make, try one of our services today!</p>
         </section>
         
         <section id="video-card">
-            <h1>Why You Want It</h1>
-            <p>Teaching Tech has a great overview of things that can go wrong with your 3D printer, and the work needed to remedy these issues</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3OHvAHbjWJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Why You Want It</h2>
+            <p>Teaching Tech has a great overview of things that can go wrong with your 3D printer, and the work needed to remedy these issues. We'll take the trouble of working out the issues for you!</p>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/3OHvAHbjWJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
 
-        <secion id="pricing-card">
-            <h1>Service Pricing</h1>
+        <section id="pricing-card">
+            <h2>Service Pricing</h2>
             <p>We have a few different levels of services we can provide you.</p>
-            <div>
-                <div>
-                    <h2>Hardware Adjustments</h2>
-                    <
+            <div id="product-container">
+                <div class="product-card">
+                    <h3>Hardware Adjustments</h3>
+                    <h4>$100</h4>
+                    <ul>
+                        <li>Worn bearing replacements</li>
+                        <li>Belt tensioning</li>
+                        <li>Extrusion alignment</li>
+                        <li>Bed leveling</li>
+                    </ul>
+                </div>
+
+                <div class="product-card">
+                    <h3>Upgraded Hardware</h3>
+                    <h4>$200</h4>
+                    <ul>
+                        <li>Stiffer heated bed springs</li>
+                        <li>Metal extruder</li>
+                        <li>Capricorn tube</li>
+                        <li>32-bit main board</li>
+                    </ul>
+                </div>
+                
+                <div class="product-card">
+                    <h3>Software Tuning</h3>
+                    <h4>$800</h4>
+                    <ul>
+                        <li>Stepper motor calibrations</li>
+                        <li>Slicer profile adjustments</li>
+                        <li>Bed probing</li>
+                        <li>OctoPrint conversion</li>
+                    </ul>
                 </div>
             </div>
-        </secion>
+        </section>
+
+        <section id="interest-card">
+            <h2>Want To Hear More?</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input id="email" name="email" placeholder="Enter your email..." type="email">
+                <input type="submit" id="submit" value="Sign me up!">
+            </form>
+        </section>
+
+        <footer>
+            <a href="#">Privacy</a> <a href="#">Terms</a> <a href="#">Contact</a>
+            <p>Copyright 2022 3xD Printing</p>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/8f9ce7e79c.js" crossorigin="anonymous"></script>
     </body>
 </html>
