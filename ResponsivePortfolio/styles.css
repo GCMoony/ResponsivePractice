@@ -8,6 +8,9 @@
 * ,::before, ::after {
     box-sizing: border-box;
     margin: 0;
+}
+
+* :not(i) {
     font-family: Montserrat;
 }
 
@@ -17,20 +20,23 @@ p, a {
     color: var(--dark-primary)
 }
 
+h1 {
+    font-size: 5em;
+}
+
 section {
     height: 100vh;
 }
 
 /* Header */
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     height: 0;
     mix-blend-mode: difference;
-    z-index: 3;
 }
 
-header #navbar{
+header #navbar *{
     color: #fff;
 }
 
@@ -48,6 +54,29 @@ header #navbar{
     gap: 2em;
 }
 
+@media (orientation = portrait) {
+    section {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    #navbar ul {
+        justify-content: center;
+    }
+
+
+    #welcome-section {
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    p, a {
+        font-size: 2rem;
+    }
+}
+
 
 
 
@@ -55,21 +84,18 @@ header #navbar{
 #welcome-section {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 5em;
-    border: solid red 1px;
     align-items: center;
+    background-color: var(--light-background);
 }
 
 #welcome-section .flex-col-half {
-    max-height: 500px;
-    border: solid red 1px;
-    
+    max-height: 400px;
 }
 
-#welcome-section h1 {
-    font-size: 5em;
-}
+
 
 /* Projects */
 #projects {
@@ -83,6 +109,27 @@ header #navbar{
 /* Contact */
 #contact {
     background: var(--light-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+#contact > * {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#link-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+#link-container a {
+    display: block;
+    font-size: 5em;
+    
 }
 
 /* Footer */
